@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+body {
+    background-color: #cfcfcf;
+    color: rgb(0, 0, 0);
+}
+
+/* TOP CONTAINER */
+
+.topcont {
+    width: 100%;
+    height: 65px;
+    background-color: rgb(31, 30, 30);
+    top: 0;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+}
+
+/* Navigation */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.icon {
+    padding: 15px;
+}
+
+/* SEARCH */
+
+#search-b {
+    font-size: 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    width: 90%;
+    padding-left: 15px;
+}
+
+.search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+    margin-right: 30px;
+    /* align-items: left; */
+}
+
+.icon-s {
+    position: absolute;
+    left: 230px;
+    top: 21px;
+    color: #111;
+}
+
+
+/* SEARCH AND SORT  */
+.s-f {
+    position: absolute;
+    width: 100%;
+    top: 75px;
+    float: left;
+    display: flex;
+    margin: auto;
+}
+
+.dropbtn {
+    background-color: #cfcfcf;
+    color: rgb(0, 0, 0);
+    /* padding: 1px; */
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    /* background-color: #2980B9; */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.drop-cont {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 120px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.drop-cont a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+    transition: 1s;
+
+}
+
+.right {
+    right: 0;
+    margin-right: 15px;
+    position: absolute;
+    float: right;
+    /* margin-left: 175px; */
+}
+
+
+/* MAIN */
+#main {
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+#main>div {
+    background-color: #f1f1f1;
+    width: 500px;
+    height: 50px;
+    margin: 10px;
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 20px;
+    border-radius: 15px;
+}
+
+#main>div>span {
+    font-size: 20px;
+
+}
+
+.icon-d {
+    float: right;
+    padding-right: 10px;
+}
+
+/* FOOTER  */
+
+.footer {
+    position: fixed;
+    bottom: 60px;
+    background-color: black;
+}
+
+.addbtn {
+    border-radius: 50%;
+    float: right;
+    margin-right: 10px;
+    position: fixed;
+    bottom: 15px;
+    right: 0;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #fff;
+}
+
+#add_todo {
+    font-size: 25px;
+    /* margin-top: 15px; */
+    margin-left: 15px;
+    border-radius: 25px;
+    padding: 7px;
+}
+
+.add {
+    position: absolute;
+    float: right;
+    margin-bottom: 15px;
+}
+
+.icon-a {
+    position: fixed;
+    bottom: 30px;
+    left: 300px;
+}

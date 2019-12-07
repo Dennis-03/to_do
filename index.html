@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>To Do List</title>
+  </head>
+
+  <body>
+    <div class="topcont">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+      <span onclick="openNav()"> <i class="fa fa-bars fa-2x icon"></i></span>
+      <div class="search ">
+        <input type="text" id="search-b" placeholder="Search" />
+        <i class="fa fa-search fa-lg icon-s"></i>
+      </div>
+    </div>
+
+    <!-- Search and filter  -->
+
+    <div class="s-f">
+      <div style="margin-left:10px ;">
+        <button onclick="drop_s()" class="dropbtn">
+          SORT <i class="fa fa-sort"></i>
+        </button>
+        <div id="sort" class="drop-cont">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="right">
+        <button onclick="drop_f()" class="dropbtn">
+          FILTER <i class="fa fa-filter"></i>
+        </button>
+        <div id="filter" class="drop-cont">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div id="main">
+      <div>
+        <i class="fa fa-check-circle fa-lg "></i>
+        <span>Sleep well</span>
+        <div class="icon-d"><i class="fa fa-trash fa-2x"></i></div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="add">
+        <input type="text" placeholder="Add TO-DO" id="add_todo" />
+        <i class="fa fa-paper-plane fa-lg icon-a"> </i>
+      </div>
+      <div>
+        <button class="addbtn"><i class="fa fa-plus fa-2x"></i></button>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
